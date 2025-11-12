@@ -1,0 +1,94 @@
+name: Generate Strudel JSON
+
+on:
+  push:
+    paths:
+      - '**/*.wav'
+      - '**/*.WAV'
+      - '**/*.mp3'
+      - '**/*.ogg'
+  workflow_dispatch:
+
+jobs:
+  generate-strudel-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Generate strudel.json
+        run: |
+          python3 << 'EOF'
+          import os
+          import json
+          from pathlib import Path
+          
+          # Configuration
+          SAMPLES_DIR = "."  # Change this to your samples directory, e.g., "samples"
+          BASE_URL = "https://raw.githubusercontent.com/${{ github.repository }}/main/"
+          OUTPUT_FILE = "strudel.json"
+          SUPPORTED_EXTENSIONS = ['.wav', '.WAV', '.mp3', '.ogg', '.flac']
+          
+          def generate_strudel_json(samples_dir, base_url):
+              samples_dict = {"_base": base_url}
+              samples_path = Path(samples_dir)
+              skip_dirs = {'.git', '.github', 'node_modules', '__pycache__', '.vscode'}
+              
+              for subdir in sorted(samples_path.iterdir()):
+                  if not subdir.is_dir() or subdir.name in skip_dirs or subdir.name.startswith('.'):
+                      continue
+                  
+                  audio_files = []
+                  for ext in SUPPORTED_EXTENSIONS:
+                      audio_files.extend(subdir.glob(f'*{ext}'))
+                  
+                  if audio_files:
+                      def sort_key(filepath):
+                          name = filepath.name
+                          parts = name.split('_', 1)
+                          if parts[0].isdigit():
+                              return (int(parts[0]), name)
+                          return (float('inf'), name)
+                      
+                      sorted_files = sorted(audio_files, key=sort_key)
+                      file_paths = [f"{subdir.name}/{f.name}" for f in sorted_files]
+                      samples_dict[subdir.name] = file_paths
+              
+              return samples_dict
+          
+          strudel_data = generate_strudel_json(SAMPLES_DIR, BASE_URL)
+          
+          with open(OUTPUT_FILE, 'w') as f:
+              json.dump(strudel_data, f, indent=2)
+          
+          print(f"✅ Generated {OUTPUT_FILE} with {len(strudel_data) - 1} sample banks")
+          for bank_name, files in strudel_data.items():
+              if bank_name != "_base":
+                  print(f"   - {bank_name}: {len(files)} samples")
+          EOF
+      
+      - name: Check if strudel.json changed
+        id: check_changes
+        run: |
+          if git diff --quiet strudel.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add strudel.json
+          git commit -m "🎵 Auto-update strudel.json [skip ci]"
+          git push
