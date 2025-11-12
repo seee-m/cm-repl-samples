@@ -51,16 +51,12 @@ jobs:
                       audio_files.extend(subdir.glob(f'*{ext}'))
                   
                   if audio_files:
-                      def sort_key(filepath):
-                          name = filepath.name
-                          parts = name.split('_', 1)
-                          if parts[0].isdigit():
-                              return (int(parts[0]), name)
-                          return (float('inf'), name)
-                      
-                      sorted_files = sorted(audio_files, key=sort_key)
-                      file_paths = [f"{subdir.name}/{f.name}" for f in sorted_files]
-                      samples_dict[subdir.name] = file_paths
+                      # Create individual entries for each sample by filename
+                      for audio_file in audio_files:
+                          # Get filename without extension
+                          sample_name = audio_file.stem
+                          # Store as single-item array with relative path
+                          samples_dict[sample_name] = [f"{subdir.name}/{audio_file.name}"]
               
               return samples_dict
           
@@ -69,10 +65,7 @@ jobs:
           with open(OUTPUT_FILE, 'w') as f:
               json.dump(strudel_data, f, indent=2)
           
-          print(f"✅ Generated {OUTPUT_FILE} with {len(strudel_data) - 1} sample banks")
-          for bank_name, files in strudel_data.items():
-              if bank_name != "_base":
-                  print(f"   - {bank_name}: {len(files)} samples")
+          print(f"✅ Generated {OUTPUT_FILE} with {len(strudel_data) - 1} samples")
           EOF
       
       - name: Check if strudel.json changed
