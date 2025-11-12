@@ -1,126 +1,360 @@
 {
   "_base": "https://raw.githubusercontent.com/seee-m/cm-repl-samples/main/",
-  "basses": [
+  "b-reese": [
     "basses/b-reese.wav"
   ],
-  "synths": [
-    "synths/syn-001.wav",
-    "synths/syn-002.wav",
-    "synths/syn-003.wav",
-    "synths/syn-004.wav",
-    "synths/syn-005.wav",
-    "synths/syn-006.wav",
-    "synths/syn-007.wav",
-    "synths/syn-008.wav",
-    "synths/syn-009.wav",
-    "synths/syn-010.wav",
-    "synths/syn-011.wav",
-    "synths/syn-012.wav",
-    "synths/syn-013.wav",
-    "synths/syn-014.wav",
-    "synths/syn-015.wav",
-    "synths/syn-016.wav",
-    "synths/syn-017.wav",
-    "synths/syn-018.wav",
-    "synths/syn-019.wav",
-    "synths/syn-020.wav",
-    "synths/syn-021.wav",
-    "synths/syn-022.wav",
-    "synths/syn-023.wav",
-    "synths/syn-024.wav",
-    "synths/syn-025.wav",
-    "synths/syn-026.wav",
-    "synths/syn-027.wav",
-    "synths/syn-028.wav",
-    "synths/syn-029.wav",
-    "synths/syn-030.wav",
-    "synths/syn-031.wav",
-    "synths/syn-032.wav",
-    "synths/syn-033.wav",
-    "synths/syn-034.wav",
-    "synths/syn-035.wav",
-    "synths/syn-036.wav",
-    "synths/syn-037.wav",
-    "synths/syn-038.wav",
-    "synths/syn-039.wav",
-    "synths/syn-040.wav",
-    "synths/syn-041.wav",
-    "synths/syn-042.wav",
-    "synths/syn-043.wav",
-    "synths/syn-044.wav",
-    "synths/syn-045.wav",
-    "synths/syn-046.wav",
-    "synths/syn-047.wav",
-    "synths/syn-048.wav",
-    "synths/syn-049.wav",
-    "synths/syn-050.wav",
-    "synths/syn-051.wav",
-    "synths/syn-052.wav",
-    "synths/syn-053.wav",
-    "synths/syn-054.wav",
-    "synths/syn-055.wav",
-    "synths/syn-056.wav",
-    "synths/syn-057.wav",
-    "synths/syn-058.wav",
-    "synths/syn-059.wav",
-    "synths/syn-060.wav",
-    "synths/syn-061.wav",
-    "synths/syn-062.wav",
-    "synths/syn-063.wav",
-    "synths/syn-064.wav",
-    "synths/syn-065.wav",
-    "synths/syn-066.wav",
-    "synths/syn-067.wav",
-    "synths/syn-068.wav",
-    "synths/syn-069.wav",
-    "synths/syn-070.wav",
-    "synths/syn-071.wav",
-    "synths/syn-072.wav",
-    "synths/syn-073.wav",
-    "synths/syn-074.wav",
-    "synths/syn-075.wav",
-    "synths/syn-076.wav",
-    "synths/syn-077.wav",
-    "synths/syn-078.wav",
-    "synths/syn-079.wav",
-    "synths/syn-080.wav",
-    "synths/syn-081.wav",
-    "synths/syn-082.wav",
-    "synths/syn-083.wav",
-    "synths/syn-084.wav",
-    "synths/syn-085.wav",
-    "synths/syn-086.wav",
-    "synths/syn-087.wav",
-    "synths/syn-088.wav",
-    "synths/syn-089.wav",
-    "synths/syn-090.wav",
-    "synths/syn-091.wav",
-    "synths/syn-092.wav",
-    "synths/syn-093.wav",
-    "synths/syn-094.wav",
-    "synths/syn-095.wav",
-    "synths/syn-096.wav",
-    "synths/syn-097.wav",
-    "synths/syn-098.wav",
-    "synths/syn-099.wav",
-    "synths/syn-100.wav",
-    "synths/syn-101.wav",
-    "synths/syn-102.wav",
-    "synths/syn-103.wav",
-    "synths/syn-104.wav",
-    "synths/syn-105.wav",
-    "synths/syn-106.wav",
-    "synths/syn-107.wav",
-    "synths/syn-108.wav",
-    "synths/syn-109.wav",
-    "synths/syn-110.wav",
-    "synths/syn-111.wav",
-    "synths/syn-112.wav",
-    "synths/syn-113.wav",
-    "synths/syn-114.wav",
-    "synths/syn-115.wav",
-    "synths/syn-116.wav",
-    "synths/syn-117.wav",
+  "syn-053": [
+    "synths/syn-053.wav"
+  ],
+  "syn-064": [
+    "synths/syn-064.wav"
+  ],
+  "syn-029": [
+    "synths/syn-029.wav"
+  ],
+  "syn-101": [
+    "synths/syn-101.wav"
+  ],
+  "syn-097": [
+    "synths/syn-097.wav"
+  ],
+  "syn-068": [
+    "synths/syn-068.wav"
+  ],
+  "syn-087": [
+    "synths/syn-087.wav"
+  ],
+  "syn-008": [
+    "synths/syn-008.wav"
+  ],
+  "syn-022": [
+    "synths/syn-022.wav"
+  ],
+  "syn-007": [
+    "synths/syn-007.wav"
+  ],
+  "syn-118": [
     "synths/syn-118.wav"
+  ],
+  "syn-061": [
+    "synths/syn-061.wav"
+  ],
+  "syn-105": [
+    "synths/syn-105.wav"
+  ],
+  "syn-079": [
+    "synths/syn-079.wav"
+  ],
+  "syn-010": [
+    "synths/syn-010.wav"
+  ],
+  "syn-018": [
+    "synths/syn-018.wav"
+  ],
+  "syn-096": [
+    "synths/syn-096.wav"
+  ],
+  "syn-030": [
+    "synths/syn-030.wav"
+  ],
+  "syn-072": [
+    "synths/syn-072.wav"
+  ],
+  "syn-063": [
+    "synths/syn-063.wav"
+  ],
+  "syn-086": [
+    "synths/syn-086.wav"
+  ],
+  "syn-023": [
+    "synths/syn-023.wav"
+  ],
+  "syn-059": [
+    "synths/syn-059.wav"
+  ],
+  "syn-041": [
+    "synths/syn-041.wav"
+  ],
+  "syn-076": [
+    "synths/syn-076.wav"
+  ],
+  "syn-004": [
+    "synths/syn-004.wav"
+  ],
+  "syn-081": [
+    "synths/syn-081.wav"
+  ],
+  "syn-003": [
+    "synths/syn-003.wav"
+  ],
+  "syn-024": [
+    "synths/syn-024.wav"
+  ],
+  "syn-116": [
+    "synths/syn-116.wav"
+  ],
+  "syn-111": [
+    "synths/syn-111.wav"
+  ],
+  "syn-106": [
+    "synths/syn-106.wav"
+  ],
+  "syn-073": [
+    "synths/syn-073.wav"
+  ],
+  "syn-037": [
+    "synths/syn-037.wav"
+  ],
+  "syn-080": [
+    "synths/syn-080.wav"
+  ],
+  "syn-051": [
+    "synths/syn-051.wav"
+  ],
+  "syn-038": [
+    "synths/syn-038.wav"
+  ],
+  "syn-058": [
+    "synths/syn-058.wav"
+  ],
+  "syn-036": [
+    "synths/syn-036.wav"
+  ],
+  "syn-011": [
+    "synths/syn-011.wav"
+  ],
+  "syn-006": [
+    "synths/syn-006.wav"
+  ],
+  "syn-013": [
+    "synths/syn-013.wav"
+  ],
+  "syn-110": [
+    "synths/syn-110.wav"
+  ],
+  "syn-042": [
+    "synths/syn-042.wav"
+  ],
+  "syn-027": [
+    "synths/syn-027.wav"
+  ],
+  "syn-014": [
+    "synths/syn-014.wav"
+  ],
+  "syn-046": [
+    "synths/syn-046.wav"
+  ],
+  "syn-048": [
+    "synths/syn-048.wav"
+  ],
+  "syn-017": [
+    "synths/syn-017.wav"
+  ],
+  "syn-107": [
+    "synths/syn-107.wav"
+  ],
+  "syn-056": [
+    "synths/syn-056.wav"
+  ],
+  "syn-019": [
+    "synths/syn-019.wav"
+  ],
+  "syn-094": [
+    "synths/syn-094.wav"
+  ],
+  "syn-012": [
+    "synths/syn-012.wav"
+  ],
+  "syn-033": [
+    "synths/syn-033.wav"
+  ],
+  "syn-113": [
+    "synths/syn-113.wav"
+  ],
+  "syn-108": [
+    "synths/syn-108.wav"
+  ],
+  "syn-115": [
+    "synths/syn-115.wav"
+  ],
+  "syn-084": [
+    "synths/syn-084.wav"
+  ],
+  "syn-040": [
+    "synths/syn-040.wav"
+  ],
+  "syn-093": [
+    "synths/syn-093.wav"
+  ],
+  "syn-112": [
+    "synths/syn-112.wav"
+  ],
+  "syn-044": [
+    "synths/syn-044.wav"
+  ],
+  "syn-035": [
+    "synths/syn-035.wav"
+  ],
+  "syn-015": [
+    "synths/syn-015.wav"
+  ],
+  "syn-109": [
+    "synths/syn-109.wav"
+  ],
+  "syn-031": [
+    "synths/syn-031.wav"
+  ],
+  "syn-005": [
+    "synths/syn-005.wav"
+  ],
+  "syn-071": [
+    "synths/syn-071.wav"
+  ],
+  "syn-092": [
+    "synths/syn-092.wav"
+  ],
+  "syn-103": [
+    "synths/syn-103.wav"
+  ],
+  "syn-032": [
+    "synths/syn-032.wav"
+  ],
+  "syn-020": [
+    "synths/syn-020.wav"
+  ],
+  "syn-043": [
+    "synths/syn-043.wav"
+  ],
+  "syn-026": [
+    "synths/syn-026.wav"
+  ],
+  "syn-089": [
+    "synths/syn-089.wav"
+  ],
+  "syn-114": [
+    "synths/syn-114.wav"
+  ],
+  "syn-074": [
+    "synths/syn-074.wav"
+  ],
+  "syn-091": [
+    "synths/syn-091.wav"
+  ],
+  "syn-055": [
+    "synths/syn-055.wav"
+  ],
+  "syn-002": [
+    "synths/syn-002.wav"
+  ],
+  "syn-075": [
+    "synths/syn-075.wav"
+  ],
+  "syn-034": [
+    "synths/syn-034.wav"
+  ],
+  "syn-085": [
+    "synths/syn-085.wav"
+  ],
+  "syn-028": [
+    "synths/syn-028.wav"
+  ],
+  "syn-100": [
+    "synths/syn-100.wav"
+  ],
+  "syn-057": [
+    "synths/syn-057.wav"
+  ],
+  "syn-090": [
+    "synths/syn-090.wav"
+  ],
+  "syn-021": [
+    "synths/syn-021.wav"
+  ],
+  "syn-054": [
+    "synths/syn-054.wav"
+  ],
+  "syn-117": [
+    "synths/syn-117.wav"
+  ],
+  "syn-025": [
+    "synths/syn-025.wav"
+  ],
+  "syn-088": [
+    "synths/syn-088.wav"
+  ],
+  "syn-082": [
+    "synths/syn-082.wav"
+  ],
+  "syn-066": [
+    "synths/syn-066.wav"
+  ],
+  "syn-067": [
+    "synths/syn-067.wav"
+  ],
+  "syn-039": [
+    "synths/syn-039.wav"
+  ],
+  "syn-065": [
+    "synths/syn-065.wav"
+  ],
+  "syn-099": [
+    "synths/syn-099.wav"
+  ],
+  "syn-104": [
+    "synths/syn-104.wav"
+  ],
+  "syn-049": [
+    "synths/syn-049.wav"
+  ],
+  "syn-062": [
+    "synths/syn-062.wav"
+  ],
+  "syn-070": [
+    "synths/syn-070.wav"
+  ],
+  "syn-052": [
+    "synths/syn-052.wav"
+  ],
+  "syn-047": [
+    "synths/syn-047.wav"
+  ],
+  "syn-050": [
+    "synths/syn-050.wav"
+  ],
+  "syn-069": [
+    "synths/syn-069.wav"
+  ],
+  "syn-083": [
+    "synths/syn-083.wav"
+  ],
+  "syn-009": [
+    "synths/syn-009.wav"
+  ],
+  "syn-098": [
+    "synths/syn-098.wav"
+  ],
+  "syn-060": [
+    "synths/syn-060.wav"
+  ],
+  "syn-102": [
+    "synths/syn-102.wav"
+  ],
+  "syn-078": [
+    "synths/syn-078.wav"
+  ],
+  "syn-095": [
+    "synths/syn-095.wav"
+  ],
+  "syn-016": [
+    "synths/syn-016.wav"
+  ],
+  "syn-001": [
+    "synths/syn-001.wav"
+  ],
+  "syn-045": [
+    "synths/syn-045.wav"
+  ],
+  "syn-077": [
+    "synths/syn-077.wav"
   ]
 }
